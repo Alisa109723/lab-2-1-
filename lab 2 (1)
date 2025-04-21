@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num 1, num 2;
+    int num1, num2;
     int sum_cubed;
     float division_result;
     int product;
@@ -23,7 +23,7 @@ if (num1 != 0)  {
 
 product = num1 * num2;
 
-printf("Сума чисел у кубі: %d\n", sum_cubed;
+printf("Сума чисел у кубі: %d\n", sum_cubed);
 printf("Результат ділення другого числа на перше: %.2f\n", division_result);
 printf("Добуток чисел: %d\n", product);
 return 0;
