@@ -2,29 +2,22 @@
 
 int main() {
     int num1, num2;
-    int sum_cubed;
-    float division_result;
     int product;
 
-printf("Введіть перше ціле число: ");
-scanf("%d", &num1);
+    // Запитуємо у користувача два цілі числа
+    printf("Введіть перше ціле число: ");
+    scanf("%d", &num1);
 
-printf("Введіть друге ціле число: ");
-scanf("%d", &num2);
+    printf("Введіть друге ціле число: ");
+    scanf("%d", &num2);
 
-sum_cubed = (num1 + num2) * (num1 + num2) * (num1 + num2);
+    // Обчислюємо добуток чисел
+    product = num1 * num2;
 
-if (num1 != 0)  {
-    division_result = (float)num2/ num1;
- } else {
-     printf("Ділення на нуль не можливе!\n");
-     return 1; 
- }
+    // Виводимо результати
+    printf("Сума кубів чисел %d і %d: %d\n", num1, num2, (num1 * num1 * num1) + (num2 * num2 * num2));
+    printf("Результат ділення 2-го числа на 1-е: %.2f\n", (num1 != 0) ? (float)num2 / num1 : 0);
+    printf("Добуток чисел %d і %d: %d\n", num1, num2, product);
 
-product = num1 * num2;
-
-printf("Сума чисел у кубі: %d\n", sum_cubed);
-printf("Результат ділення другого числа на перше: %.2f\n", division_result);
-printf("Добуток чисел: %d\n", product);
-return 0;
+    return 0;
 }
