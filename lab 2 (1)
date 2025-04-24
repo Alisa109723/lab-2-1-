@@ -2,7 +2,6 @@
 
 int main() {
     int num1, num2;
-    int product;
 
     // Запитуємо у користувача два цілі числа
     printf("Введіть перше ціле число: ");
@@ -11,13 +10,10 @@ int main() {
     printf("Введіть друге ціле число: ");
     scanf("%d", &num2);
 
-    // Обчислюємо добуток чисел
-    product = num1 * num2;
-
     // Виводимо результати
     printf("Сума кубів чисел %d і %d: %d\n", num1, num2, (num1 * num1 * num1) + (num2 * num2 * num2));
     printf("Результат ділення 2-го числа на 1-е: %.2f\n", (num1 != 0) ? (float)num2 / num1 : 0);
-    printf("Добуток чисел %d і %d: %d\n", num1, num2, product);
+    printf("Добуток чисел %d і %d: %d\n", num1, num2, num1 * num2);
 
     return 0;
 }
